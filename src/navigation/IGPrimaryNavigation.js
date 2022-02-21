@@ -26,7 +26,7 @@ export default function IGPrimaryNavigation() {
       }} />
     <Tab.Screen name="Search" component={InstagramScreens.SearchScreen}
       options={{
-        header: InstagramScreens.IGFeedTopBar,
+        header: InstagramScreens.IGSearchTopBar,
         navigationOptions: {
           headerForceInset: { vertical: 'never' },
         },
@@ -38,7 +38,7 @@ export default function IGPrimaryNavigation() {
       }} />
     <Tab.Screen name="Reels" component={InstagramScreens.ReelsScreen}
       options={{
-        header: InstagramScreens.IGFeedTopBar,
+        header: InstagramScreens.IGReelsTopBar,
         navigationOptions: {
           headerForceInset: { vertical: 'never' },
         },
