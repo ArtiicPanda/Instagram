@@ -3,13 +3,14 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { IGFeedTopBar } from './Screens';
 import { ScrollView, View } from 'react-native';
 import SearchBar from '../searchbar/searchbar';
-import * as InstagramButtons from '../navigation/Buttons/Buttons';
+import * as InstagramButtons from '../components/Buttons/Buttons';
+import *  as InstagramPhotoRows from '../components/User/PhotoRows';
 
 export default function ShopScreen() {
   return (
     <>
       <ScrollView>
-      <View style={{ backgroundColor: '#fff', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+      <View style={{ backgroundColor: '#fff', display: 'flex', flexDirection: 'row', alignContent: 'center', alignItems: 'center' }}>
             <SearchBar />
       </View>
       <View style={{backgroundColor: '#fff'}}>
@@ -23,6 +24,13 @@ export default function ShopScreen() {
 
       </ScrollView>
       </View>
+      <InstagramPhotoRows.PhotosRow1 />
+      <InstagramPhotoRows.PhotosRow2 />
+      <InstagramPhotoRows.PhotosRow3 />
+      <InstagramPhotoRows.PhotosRow4 />
+      <InstagramPhotoRows.PhotosRow5 />
+      <InstagramPhotoRows.PhotosRow6 />
+      <InstagramPhotoRows.PhotosRow7 />
       </ScrollView>
     </>
   );

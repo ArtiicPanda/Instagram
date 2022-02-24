@@ -14,7 +14,7 @@ export default function IGShopTopBar() {
             <View style={{ flex: 1 }} />
             <View style={{ flex: 1 }} />
             <View style={{ flex: 1 }} />
-            <View style={{ flex: 1 }} />
+            {/* <View style={{ flex: 1 }} />
 
             <View>
                 <View style={{ flex: 1 }} />
@@ -22,7 +22,7 @@ export default function IGShopTopBar() {
                 <View style={{ flex: 1 }} />
             </View>
 
-            <View style={{ flex: 1 }} />
+            <View style={{ flex: 1 }} /> */}
 
             <View>
                 <View style={{ flex: 1 }} />

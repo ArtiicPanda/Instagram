@@ -17,7 +17,7 @@ const SearchBar = (props) => {
         }
       >
         {/* search Icon */}
-        <InstagramIcons.SearchIcon />
+        <InstagramIcons.SearchIcon opacity={0.5} height={12} />
         {/* Input field */}
         <TextInput
           style={styles.input}
@@ -55,34 +55,34 @@ export default SearchBar;
 // styles
 const styles = StyleSheet.create({
   container: {
-    margin: 15,
+    marginHorizontal: 10,
+    flex: 1,
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
+    // backgroundColor: "#000",
     width: "90%",
     height: 40
   },
   searchBar__unclicked: {
-    padding: 10,
+    // padding: 10,
     flexDirection: "row",
-    width: "95%",
+    width: "100%",
     backgroundColor: "#d9dbda",
-    borderRadius: 15,
+    borderRadius: 5,
     alignItems: "center",
   },
   searchBar__clicked: {
-    padding: 10,
+    // padding: 10,
     flexDirection: "row",
     width: "80%",
     backgroundColor: "#d9dbda",
-    borderRadius: 15,
+    borderRadius: 5,
     alignItems: "center",
     justifyContent: "space-evenly",
   },
   input: {
     fontSize: 16,
-    marginLeft: 10,
-    height: 20,
-    width: "90%",
+    height: 30,
   },
 });

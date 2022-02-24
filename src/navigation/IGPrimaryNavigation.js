@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import * as InstagramScreens from '../screens/Screens';
 import * as InstagramIcons from '../assets/icons/Icons';
-import { SafeAreaView, StatusBar } from 'react-native';
+import { SafeAreaView, StatusBar, Image } from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
@@ -20,7 +20,7 @@ export default function IGPrimaryNavigation() {
         },
         tabBarIcon: ({focused,color}) => {
           return (
-            <InstagramIcons.HomeIcon />
+            <InstagramIcons.HomeIcon fill={ focused ? 'black' : 'white' } />
           );
         },
       }} />
@@ -32,7 +32,7 @@ export default function IGPrimaryNavigation() {
         },
         tabBarIcon: ({focused,color}) => {
           return (
-            <InstagramIcons.SearchIcon />
+            <InstagramIcons.SearchIcon strokeWidth={ focused ? '2' : '1' } />
           );
         },
       }} />
@@ -68,7 +68,22 @@ export default function IGPrimaryNavigation() {
         },
         tabBarIcon: ({focused,color}) => {
           return (
-            <InstagramIcons.AvatarIcon />
+            <Image style={{ width: 30,
+              height: 30,
+              borderRadius: 100 / 2,
+              backgroundColor: 'white',
+              borderWidth: 1,
+              borderColor: focused ? 'black' : 'white',
+              shadowColor: "#000",
+              shadowOffset: {
+                  width: 0,
+                  height: 5,
+              },
+              shadowOpacity: 0.34,
+              shadowRadius: 6.27,
+              elevation: 10, }} source={{ uri: 'https://source.unsplash.com/random/?user' }}/>
+
+            
           );
         },
       }} />

@@ -1,9 +1,17 @@
 import * as React from 'react';
-import { IGFeedTopBar } from './Screens';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import *  as InstagramPhotoRows from '../components/User/PhotoRows';
+import { InstagramExplore } from '../components/Components';
+
+import { ScrollView } from 'react-native';
 
 export default function SearchScreen() {
   return (
-    <></>
+    <>
+    <ScrollView>
+      <InstagramExplore.ExploreRow1 />
+      <InstagramExplore.ExploreRow3 />
+      <InstagramExplore.ExploreRow2 />
+    </ScrollView>
+    </>
   );
 }

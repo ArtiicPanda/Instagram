@@ -12,8 +12,12 @@ export default function IGReelsTopBar() {
             <View style={{ flex: 1 }} />
             <View style={{ flex: 1 }} />
             <View style={{ flex: 1 }} />
-            <View style={{ flex: 1 }} />
-            <InstagramIcons.Burger />
+            {/* <View style={{ flex: 1 }} /> */}
+            <View>
+                <View style={{ flex: 1 }} />
+                    <InstagramIcons.Burger />
+                <View style={{ flex: 1 }} />
+            </View>
         </View>
     )
 }
